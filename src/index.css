@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  max-width: 32.7rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5);
+}
+
+.img {
+  height: 20rem;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.main {
+  padding: 3.2rem;
+}
+
+.heading {
+  font-size: 1.6rem;
+  color: #48556a;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.paragraph {
+  color: #6e8098;
+  line-height: 2rem;
+  letter-spacing: 0.122px;
+  margin-top: 1.2rem;
+}
+
+.share--white {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 3.2rem 3.2rem 3.2rem;
+}
+
+.details__box {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.avatar {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.share__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: #48556a;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.122px;
+}
+
+.date {
+  color: #9daec2;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.122px;
+}
+
+.btn__share {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.share--dark {
+  background-color: #48556a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.2rem 2rem 3.2rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.dark__box {
+  display: flex;
+}
+
+.share__text {
+  color: #9daec2;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 5px;
+  margin-right: 2rem;
+}
+
+.icons__box {
+  width: 9.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn--dark {
+  background-color: #6e8098;
+  fill: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/**************** DESKTOP ********************/
+
+@media screen and (min-width: 71.25em) {
+  body {
+    justify-content: center;
+  }
+
+  .component {
+    flex-direction: row;
+    max-width: 73rem;
+    height: 28rem;
+    border-radius: 1rem;
+  }
+
+  .content__wrapper {
+    padding: 3.2rem 4rem 3.2rem 3.2rem;
+    position: relative;
+  }
+
+  .img {
+    height: 100%;
+    width: 30rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .heading {
+    font-size: 2rem;
+    letter-spacing: 0.25px;
+  }
+
+  .paragraph {
+    margin-bottom: 2rem;
+  }
+
+  .share--white {
+    /* padding: 0rem 3.6rem 3.2rem 3.6rem; */
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .details__box {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  .btn__share {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  .absolute-box {
+    background-color: #48556a;
+    position: absolute;
+    top: 12.9rem;
+    right: -6.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.2rem 2rem 3.2rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+
+  .absolute-box::after {
+    position: absolute;
+    bottom: -1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    background-color: #48556a;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+  }
+
+  .dark__box {
+    display: flex;
+  }
+
+  .share__text {
+    color: #9daec2;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 5px;
+    margin-right: 2rem;
+  }
+
+  .icons__box {
+    width: 9.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
